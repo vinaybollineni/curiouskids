@@ -5,6 +5,7 @@
   --muted: #4b5563;
   --accent: #7c3aed;
   --accent-soft: #ede9fe;
+  --accent-soft-2: #f5f3ff;
   --border: #e5e7eb;
 }
 
@@ -20,14 +21,20 @@ body {
   line-height: 1.6;
 }
 
+.section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .container {
   width: min(92%, 860px);
   margin: 0 auto;
 }
 
 .hero {
-  padding: 3.5rem 0 2rem;
+  padding: 3.5rem 0 2.5rem;
   text-align: center;
+  background: linear-gradient(180deg, #faf5ff 0%, #fefcf8 90%);
 }
 
 .tag {
@@ -52,6 +59,35 @@ h1 {
   color: var(--muted);
 }
 
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-outline {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #ffffff;
+}
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -64,9 +100,14 @@ h1 {
   font-size: 1.35rem;
 }
 
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
 .info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 0.9rem;
   margin-top: 1rem;
   margin-bottom: 2.4rem;
@@ -90,9 +131,49 @@ h1 {
   font-weight: 600;
 }
 
+.grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cards-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cards-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+  background: var(--accent-soft-2);
+}
+
+ul,
+ol {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.routine-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.routine-grid p {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.contact p {
+  margin: 0.25rem 0;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 1rem;
+  margin-top: 1.2rem;
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
