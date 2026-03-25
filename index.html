@@ -296,14 +296,6 @@
       </div>
       <div class="tuition-notes">
         <div class="note-item">
-          <span>💰</span>
-          <p><strong>$100 Non-Refundable Registration Fee</strong> due at enrollment to hold your child's spot.</p>
-        </div>
-        <div class="note-item">
-          <span>📋</span>
-          <p><strong>Annual Tax Statement</strong> provided by January 31st for Child & Dependent Care Tax Credit.</p>
-        </div>
-        <div class="note-item">
           <span>🏠</span>
           <p><strong>Max 3 Children</strong> — spots are limited. Reserve yours early to avoid missing out.</p>
         </div>
@@ -322,8 +314,8 @@
         </div>
         <div class="trust-item">
           <div class="trust-icon">🚑</div>
-          <h4>CPR & First Aid Certified</h4>
-          <p>Provider is fully certified and prepared for any emergency situation.</p>
+          <h4>CPR Certified</h4>
+          <p>Provider is CPR certified and prepared for emergency situations.</p>
         </div>
         <div class="trust-item">
           <div class="trust-icon">🔍</div>
@@ -381,32 +373,48 @@
           </div>
         </div>
         <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
+          <p id="formThanks" class="form-thanks" hidden role="status">
+            Thank you! Your message was sent. We'll be in touch soon.
+          </p>
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/meghanavantipalli@gmail.com"
+            method="POST"
+          >
             <h3>Send Us a Message</h3>
+            <input type="hidden" name="_subject" value="Curious Kids — Website inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://vinaybollineni.github.io/curiouskids/?thanks=1" />
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" placeholder="Jane Smith" required />
+              <label for="inquiry-name">Your Name</label>
+              <input id="inquiry-name" name="name" type="text" placeholder="Jane Smith" required />
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" placeholder="(555) 000-0000" />
+                <label for="inquiry-phone">Phone</label>
+                <input id="inquiry-phone" name="phone" type="tel" placeholder="(555) 000-0000" />
               </div>
               <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="you@email.com" required />
+                <label for="inquiry-email">Email</label>
+                <input id="inquiry-email" name="email" type="email" placeholder="you@email.com" required />
               </div>
             </div>
             <div class="form-group">
-              <label>Child's Age</label>
-              <input type="text" placeholder="e.g. 8 months, 2 years" />
+              <label for="inquiry-child-age">Child's Age</label>
+              <input id="inquiry-child-age" name="child_age" type="text" placeholder="e.g. 8 months, 2 years" />
             </div>
             <div class="form-group">
-              <label>Message</label>
-              <textarea rows="4" placeholder="Tell us about your family and what you're looking for..."></textarea>
+              <label for="inquiry-message">Message</label>
+              <textarea id="inquiry-message" name="message" rows="4" placeholder="Tell us about your family and what you're looking for..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary full-width">Send Message 🌱</button>
-            <p class="form-note">We typically respond within 24 hours.</p>
+            <p class="form-note">
+              Submissions are delivered by
+              <a href="https://formsubmit.co/" rel="noopener noreferrer" target="_blank">FormSubmit</a>
+              (free). We typically respond within 24 hours.
+            </p>
           </form>
         </div>
       </div>

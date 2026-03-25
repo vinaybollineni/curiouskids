@@ -50,22 +50,23 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ── CONTACT FORM ──────────────────────────────────────
+// ── CONTACT FORM (FormSubmit redirect back) ───────────
+const formThanks = document.getElementById('formThanks');
+const thanksParams = new URLSearchParams(window.location.search);
+if (thanksParams.get('thanks') === '1' && formThanks) {
+  formThanks.hidden = false;
+  window.history.replaceState(null, '', `${window.location.pathname}#contact`);
+  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', () => {
     const btn = form.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = '✅ Message Sent! We\'ll be in touch soon.';
-    btn.disabled = true;
-    btn.style.background = '#2E9E8F';
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      btn.style.background = '';
-      form.reset();
-    }, 4000);
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+    }
   });
 }
 
