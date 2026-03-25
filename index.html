@@ -1,164 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curious Kids Learning Center LLC</title>
-    <meta
-      name="description"
-      content="Curious Kids Learning Center LLC - A warm and nurturing home daycare."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="container">
-        <p class="tag">Home Daycare</p>
-        <h1>Curious Kids Learning Center LLC</h1>
-        <p class="subtitle">
-          A warm, safe, and nurturing home daycare where children learn through
-          play, routine, and loving care.
-        </p>
-        <div class="hero-actions">
-          <a href="#enroll" class="btn btn-primary">Start Enrollment</a>
-          <a href="#contact" class="btn btn-outline">Contact Us</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curious Kids Learning Center LLC | Liberty Hill, TX Home Daycare</title>
+  <meta name="description" content="A warm, nurturing home daycare in Liberty Hill, TX. Small group care (max 3 children) operated by Meghana Vantipalli. Where Curiosity Meets Care." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">Curious Kids</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#daily">Daily Life</a></li>
+        <li><a href="#tuition">Tuition</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#daily">Daily Life</a>
+      <a href="#tuition">Tuition</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-in" style="--delay: 0.1s">
+        <span>🏡</span> Texas Listed Family Home · Operation #1831036
       </div>
-    </header>
+      <h1 class="hero-title animate-in" style="--delay: 0.2s">
+        Where <em>Curiosity</em><br/>Meets Care
+      </h1>
+      <p class="hero-sub animate-in" style="--delay: 0.35s">
+        A warm, nurturing home daycare in Liberty Hill, TX — intentionally small,<br class="br-desktop"/>
+        so every child gets the love and attention they deserve.
+      </p>
+      <div class="hero-actions animate-in" style="--delay: 0.5s">
+        <a href="#contact" class="btn btn-primary">Schedule a Tour</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+      <div class="hero-pills animate-in" style="--delay: 0.65s">
+        <span class="pill">👶 Infants & Toddlers</span>
+        <span class="pill">👥 Max 3 Children</span>
+        <span class="pill">🍽️ Meals Included</span>
+        <span class="pill">📍 Liberty Hill, TX</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <main>
-      <section class="card container section">
-        <h2>About Us</h2>
-        <p>
-          Welcome to Curious Kids Learning Center LLC. We provide a caring,
-          family-style daycare environment focused on social, emotional, and
-          early learning development. Our goal is to make every child feel
-          secure, confident, and excited to learn each day.
-        </p>
-      </section>
-
-      <section class="info container section">
-        <div class="info-item">
-          <h3>Provider</h3>
-          <p>Meghana Vantipalli</p>
-        </div>
-        <div class="info-item">
-          <h3>Texas HHS Operation #</h3>
-          <p>1831036</p>
-        </div>
-        <div class="info-item">
-          <h3>Location</h3>
-          <p>Home-Based Daycare, Texas</p>
-        </div>
-      </section>
-
-      <section class="container section">
-        <h2>Our Services</h2>
-        <div class="grid cards-3">
-          <article class="card service-card">
-            <h3>Infant & Toddler Care</h3>
-            <p>
-              Gentle, attentive care with age-appropriate activities, tummy
-              time, sensory play, and nurturing routines.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3>Preschool Readiness</h3>
-            <p>
-              Early literacy, numbers, colors, songs, and hands-on activities
-              to build confidence before kindergarten.
-            </p>
-          </article>
-          <article class="card service-card">
-            <h3>Daily Meals & Snacks</h3>
-            <p>
-              Balanced meals and snacks are provided in a structured schedule
-              to support healthy growth and habits.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="container section">
-        <h2>What Children Experience</h2>
-        <div class="grid cards-2">
-          <article class="card">
-            <h3>Learning Through Play</h3>
-            <ul>
-              <li>Circle time, stories, songs, and rhymes</li>
-              <li>Fine motor activities, puzzles, and art</li>
-              <li>Early social skills and cooperative play</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Safe and Caring Environment</h3>
-            <ul>
-              <li>Clean, organized, child-friendly spaces</li>
-              <li>Supervised indoor and outdoor activities</li>
-              <li>Consistent routines for comfort and security</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="container section">
-        <h2>Sample Daily Routine</h2>
-        <div class="card">
-          <div class="routine-grid">
-            <p><strong>7:30 AM - 8:30 AM</strong> Arrival & free play</p>
-            <p><strong>8:30 AM - 9:00 AM</strong> Breakfast</p>
-            <p><strong>9:00 AM - 10:00 AM</strong> Circle time & learning activities</p>
-            <p><strong>10:00 AM - 11:00 AM</strong> Creative play / outdoor time</p>
-            <p><strong>11:30 AM - 12:00 PM</strong> Lunch</p>
-            <p><strong>12:30 PM - 2:30 PM</strong> Nap / quiet time</p>
-            <p><strong>2:30 PM - 3:00 PM</strong> Snack</p>
-            <p><strong>3:00 PM - 5:30 PM</strong> Play, pickup, and parent updates</p>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card card-main">
+            <div class="card-emoji">🌟</div>
+            <p class="card-quote">"Every child deserves to feel safe, loved, and ready to learn."</p>
+            <span class="card-author">— Meghana Vantipalli</span>
+          </div>
+          <div class="about-card card-stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Children Max</span>
+          </div>
+          <div class="about-card card-stat card-stat-2">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Care Quality</span>
           </div>
         </div>
-      </section>
-
-      <section class="container section" id="enroll">
-        <h2>Enrollment</h2>
-        <div class="grid cards-2">
-          <article class="card">
-            <h3>How to Join</h3>
-            <ol>
-              <li>Reach out by phone or email</li>
-              <li>Schedule a home daycare tour</li>
-              <li>Complete enrollment forms</li>
-              <li>Confirm start date and child routine details</li>
-            </ol>
-          </article>
-          <article class="card">
-            <h3>What to Prepare</h3>
-            <ul>
-              <li>Emergency contact information</li>
-              <li>Health and immunization records</li>
-              <li>Diapers/change of clothes if needed</li>
-              <li>Comfort items for nap time</li>
-            </ul>
-          </article>
+        <div class="about-text">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">A Home Away<br/>From Home</h2>
+          <p class="section-body">
+            Welcome to <strong>Curious Kids Learning Center LLC</strong>, a Texas Listed Family Home daycare 
+            operated by <strong>Meghana Vantipalli</strong> in Liberty Hill, TX. We believe the earliest years of 
+            childhood are the most important — and that small, personalized care makes all the difference.
+          </p>
+          <p class="section-body">
+            By intentionally limiting enrollment to a maximum of <strong>3 children</strong>, we ensure every 
+            child receives the individualized attention, warmth, and stimulation they need to grow and thrive — 
+            socially, emotionally, physically, and intellectually.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">🔒</span>
+              <div>
+                <strong>Safe & Secure</strong>
+                <p>A fully childproofed, smoke-free home environment.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">💛</span>
+              <div>
+                <strong>Nurturing & Warm</strong>
+                <p>Every child feels loved, seen, and celebrated every day.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">📚</span>
+              <div>
+                <strong>Structured Learning</strong>
+                <p>Age-appropriate activities that spark curiosity and growth.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="container section" id="contact">
-        <h2>Contact</h2>
-        <div class="card contact">
-          <p><strong>Provider:</strong> Meghana Vantipalli</p>
-          <p><strong>Phone:</strong> (Add your phone number)</p>
-          <p><strong>Email:</strong> (Add your email address)</p>
-          <p><strong>Hours:</strong> Monday - Friday (Add your hours)</p>
-          <p><strong>Texas HHS Operation #:</strong> 1831036</p>
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Everything Your<br/>Child Needs</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🍳</div>
+          <h3>Nutritious Meals</h3>
+          <p>Breakfast, lunch, and afternoon snack provided daily. Allergy-aware meal planning for your child's specific needs.</p>
         </div>
-      </section>
-    </main>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Educational Activities</h3>
+          <p>Age-appropriate arts, crafts, reading, and play-based learning designed to develop cognitive and motor skills.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌳</div>
+          <h3>Outdoor Play</h3>
+          <p>Supervised outdoor time every day (weather permitting) to support physical development and a love of nature.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">😴</div>
+          <h3>Nap & Rest Time</h3>
+          <p>Dedicated nap time with individual labeled cots. Sleep sack and bedding provided by families.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Daily Updates</h3>
+          <p>Photo updates and daily communication logs so you always know how your child's day is going.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Health & Safety</h3>
+          <p>CPR & First Aid certified provider. Clear illness policies and emergency procedures always in place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>&copy; <span id="year"></span> Curious Kids Learning Center LLC</p>
-    </footer>
+  <!-- DAILY SCHEDULE -->
+  <section class="section daily" id="daily">
+    <div class="container">
+      <div class="daily-grid">
+        <div class="daily-text">
+          <div class="section-tag">A Typical Day</div>
+          <h2 class="section-title">Routines That<br/>Help Kids Thrive</h2>
+          <p class="section-body">
+            Consistent routines give children the security and predictability they need to feel confident 
+            and ready to learn. Here's a glimpse into a typical day at Curious Kids.
+          </p>
+          <div class="hours-banner">
+            <span>🕗</span>
+            <div>
+              <strong>Hours of Operation</strong>
+              <span>Monday – Friday &nbsp;|&nbsp; 8:30 AM – 5:30 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-timeline">
+          <div class="timeline-item">
+            <div class="time">8:30 AM</div>
+            <div class="event">
+              <strong>Drop-Off & Welcome</strong>
+              <p>Greetings, sign-in, and free play to settle in.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">9:00 AM</div>
+            <div class="event">
+              <strong>Breakfast</strong>
+              <p>Nutritious morning meal together.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">9:30 AM</div>
+            <div class="event">
+              <strong>Learning Activities</strong>
+              <p>Structured educational play, reading & crafts.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">11:00 AM</div>
+            <div class="event">
+              <strong>Outdoor Play</strong>
+              <p>Fresh air, movement and exploration.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">12:00 PM</div>
+            <div class="event">
+              <strong>Lunch</strong>
+              <p>Hot nutritious lunch served together.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">1:00 PM</div>
+            <div class="event">
+              <strong>Nap & Rest Time</strong>
+              <p>Quiet rest on individual labeled cots.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">3:00 PM</div>
+            <div class="event">
+              <strong>Afternoon Snack</strong>
+              <p>Healthy snack and transition to afternoon.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">3:30 PM</div>
+            <div class="event">
+              <strong>Creative Free Play</strong>
+              <p>Child-led exploration and imaginative play.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">5:00 PM</div>
+            <div class="event">
+              <strong>Wind Down & Pick-Up</strong>
+              <p>Calm activities, daily report shared with parents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+  <!-- TUITION -->
+  <section class="section tuition" id="tuition">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Tuition & Enrollment</div>
+        <h2 class="section-title">Simple, Transparent<br/>Pricing</h2>
+        <p class="section-body center">Tuition is due on the 1st of each month. Contact us for current rates — we'd love to discuss your family's specific needs.</p>
+      </div>
+      <div class="tuition-grid">
+        <div class="tuition-card">
+          <div class="tuition-icon">📅</div>
+          <h3>Monthly Tuition</h3>
+          <p>Rates based on days per week. Contact us for a personalized quote based on your schedule.</p>
+          <a href="#contact" class="btn btn-outline">Get a Quote</a>
+        </div>
+        <div class="tuition-card tuition-featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="tuition-icon">⭐</div>
+          <h3>Full Week Enrollment</h3>
+          <p>Monday through Friday full-time care with all meals, activities, and daily updates included.</p>
+          <a href="#contact" class="btn btn-primary">Enroll Today</a>
+        </div>
+        <div class="tuition-card">
+          <div class="tuition-icon">📆</div>
+          <h3>Part-Week Enrollment</h3>
+          <p>Flexible 3-day schedules available. Drop-off and pick-up times tailored to your family.</p>
+          <a href="#contact" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="tuition-notes">
+        <div class="note-item">
+          <span>💰</span>
+          <p><strong>$100 Non-Refundable Registration Fee</strong> due at enrollment to hold your child's spot.</p>
+        </div>
+        <div class="note-item">
+          <span>📋</span>
+          <p><strong>Annual Tax Statement</strong> provided by January 31st for Child & Dependent Care Tax Credit.</p>
+        </div>
+        <div class="note-item">
+          <span>🏠</span>
+          <p><strong>Max 3 Children</strong> — spots are limited. Reserve yours early to avoid missing out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section class="section trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">🏛️</div>
+          <h4>Texas Listed Family Home</h4>
+          <p>Operation #1831036 — registered with Texas Health & Human Services.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🚑</div>
+          <h4>CPR & First Aid Certified</h4>
+          <p>Provider is fully certified and prepared for any emergency situation.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔍</div>
+          <h4>Background Checked</h4>
+          <p>All household members have undergone Texas HHS background checks.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🍃</div>
+          <h4>Smoke-Free Home</h4>
+          <p>Completely smoke-free, vape-free environment inside and outside.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Let's Talk About<br/>Your Child</h2>
+          <p class="section-body">
+            We'd love to meet your family and show you our space. Reach out to schedule a tour or ask any questions — we're happy to help.
+          </p>
+          <div class="contact-details">
+            <a href="tel:7372969752" class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <strong>Call or Text</strong>
+                <span>737-296-9752</span>
+              </div>
+            </a>
+            <a href="mailto:meghanavantipalli@gmail.com" class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <strong>Email Us</strong>
+                <span>meghanavantipalli@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>328 Caisson Trl, Liberty Hill, TX 78642</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕗</div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon – Fri &nbsp;|&nbsp; 8:30 AM – 5:30 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <h3>Send Us a Message</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="(555) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Child's Age</label>
+              <input type="text" placeholder="e.g. 8 months, 2 years" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Tell us about your family and what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message 🌱</button>
+            <p class="form-note">We typically respond within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🌱 Curious Kids Learning Center LLC</div>
+          <p>Where Curiosity Meets Care</p>
+          <p class="footer-legal">Operated by Meghana Vantipalli<br/>Texas Listed Family Home | Operation #1831036</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#daily">Daily Schedule</a>
+          <a href="#tuition">Tuition</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📞 <a href="tel:7372969752">737-296-9752</a></p>
+          <p>✉️ <a href="mailto:meghanavantipalli@gmail.com">meghanavantipalli@gmail.com</a></p>
+          <p>📍 328 Caisson Trl<br/>Liberty Hill, TX 78642</p>
+          <p>🕗 Mon–Fri · 8:30 AM – 5:30 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Curious Kids Learning Center LLC. All rights reserved.</p>
+        <p>THIS HOME IS A LISTED FAMILY HOME. IT IS NOT LICENSED OR REGISTERED WITH THE HEALTH AND HUMAN SERVICES COMMISSION.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
