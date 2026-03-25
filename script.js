@@ -18,7 +18,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
 
 // ── SCROLL REVEAL ─────────────────────────────────────
 const revealEls = document.querySelectorAll(
-  '.service-card, .timeline-item, .tuition-card, .trust-item, .note-item, .value-item, .about-card, .contact-item'
+  '.service-card, .timeline-item, .tuition-card, .trust-item, .value-item, .about-card, .contact-item'
 );
 
 revealEls.forEach(el => el.classList.add('reveal'));
